@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import useSWR from 'swr';
 import fetcher from '../../utils/fetcher';
+import Link from 'next/link';
 
 export const Newsletter = () => {
     const [email, setEmail] = useState('');
@@ -46,11 +47,11 @@ export const Newsletter = () => {
                             To get the latest updates, you have to get subscribed for our Newsletter. We will send you an email informing every updates. Just fill this form & you are good to go.
                         </p>
                         <a
-                            href="/"
+                            // href="/"
                             aria-label=""
                             className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-blue-400 hover:text-blue-700"
                         >
-                            Learn more
+                           <Link href="/">Learn more</Link>
                             <svg
                                 className="inline-block w-3 ml-2"
                                 fill="currentColor"
@@ -79,7 +80,7 @@ export const Newsletter = () => {
                                     </pattern>
                                 </defs>
                                 <rect
-                                    fill="url(#766323e1-e594-4ffd-a688-e7275079d540)"
+                                    // fill="url(#766323e1-e594-4ffd-a688-e7275079d540)"
                                     width="52"
                                     height="24"
                                 />
@@ -93,9 +94,9 @@ export const Newsletter = () => {
                                         <label
                                             htmlFor="email"
                                             className="inline-block mb-1 font-medium"
-                                            text-blue-400
+                                            
                                         >
-                                            <h1 text-blue-400>E-mail</h1>
+                                            <h1 >E-mail</h1>
                                         </label>
                                         <input
                                             placeholder="john.doe@example.org"
@@ -124,12 +125,12 @@ export const Newsletter = () => {
                                 </form>
                                 <div>
                                     {success
-                                        ? <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative" role="alert">
-                                            <span class="block sm:inline">{success}</span>
+                                        ? <div className="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative" role="alert">
+                                            <span className="block sm:inline">{success}</span>
 
                                         </div>
-                                        : <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-                                            <span class="block sm:inline">{error}</span>
+                                        : <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                                            <span className="block sm:inline">{error}</span>
                                         </div>
                                     }
                                 </div>

@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Footer = () => {
     return (
         <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
                 <div className="md:max-w-md lg:col-span-2">
-                    <a
+                    <Link
                         href="/"
                         aria-label="Go home"
                         title="Ashiq The Dev"
@@ -15,11 +16,12 @@ export const Footer = () => {
                         <Image src="https://cdn.ashiqtasdid.xyz/images/cdn/ashiqthedev.com/images/atd.jpg"
                             width={50}
                             height={50}
+                            alt="image"
                         />
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Ashiq The Dev
                         </span>
-                    </a>
+                    </Link>
                     <div className="mt-4 lg:max-w-sm">
                         <p className="text-sm text-gray-800">
                             Ashiq The Dev - Developing That Matters is an IT consultant company. It provides various kinds of IT services including, Web & Mobile Development, SEO & much more
@@ -44,28 +46,28 @@ export const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
                                     Services
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
                                     Softwares
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
                                     Operating System
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -108,10 +110,10 @@ export const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="/contact"
+                                    // href="/contact"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
-                                    Help
+                                    <Link href="/contact">Help</Link>
                                 </a>
                             </li>
                         </ul>
@@ -121,10 +123,10 @@ export const Footer = () => {
                         <ul className="mt-2 space-y-2">
                             <li>
                                 <a
-                                    href="/team"
+                                    // href="team"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
-                                    Team
+                                    <Link href="/team">Team</Link>
                                 </a>
                             </li>
                             <li>
@@ -137,19 +139,19 @@ export const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="/about"
+                                    // href="/about"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
-                                    Who are we
+                                    <Link href="/about">Who are we</Link>
                                 </a>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
                                     Projects
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -157,7 +159,7 @@ export const Footer = () => {
                         <p className="font-semibold tracking-wide text-gray-800">Legal</p>
                         <ul className="mt-2 space-y-2">
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
@@ -166,23 +168,23 @@ export const Footer = () => {
                                     admin@ashiqthedev.com
 
                                     + 880 1311 807380
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
                                     Terms & Conditions
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
                                     Privacy Policy
-                                </a>
+                                </Link>
                             </li>
                            
                         </ul>

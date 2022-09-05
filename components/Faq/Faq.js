@@ -22,7 +22,6 @@ const Item = ({ title, children }) => {
             }`}
           >
             <polyline
-              fill="none"
               stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
@@ -43,20 +42,19 @@ const Item = ({ title, children }) => {
   
   export const Faq = () => {
     return (
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
-        <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
-          <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <div>
-              <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-50 uppercase rounded-full bg-blue-400">
+              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-50 uppercase rounded-full bg-blue-400">
                 FAQ
               </p>
             </div>
-            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-50 sm:text-4xl md:mx-auto">
-              <span class="relative inline-block">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-50 sm:text-4xl md:mx-auto">
+              <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
-                  fill="currentColor"
-                  class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
                 >
                   <defs>
                     <pattern
@@ -70,20 +68,20 @@ const Item = ({ title, children }) => {
                     </pattern>
                   </defs>
                   <rect
-                    fill="url(#232db96b-4aa2-422f-9086-5a77996d1df1)"
+                    // fill="url(#232db96b-4aa2-422f-9086-5a77996d1df1)"
                     width="52"
                     height="24"
                   />
                 </svg>
-                <span class="relative">Frequently</span>
+                <span className="relative">Frequently</span>
               </span>{' '}
               Asked Questions
             </h2>
-            <p class="text-base text-gray-700 md:text-lg ">
+            <p className="text-base text-gray-700 md:text-lg ">
               Here are the answers to the Questions that have been asked frequently
             </p>
           </div>
-          <div class="space-y-4">
+          <div className="space-y-4">
             <Item title="What kind of services do you provide?">
               We provide various kinds of IT services, including, Server Development, Web & Software Development, SEO, etc.
             </Item>
@@ -91,7 +89,7 @@ const Item = ({ title, children }) => {
               We have very much experienced Development Team, and we have more than 3+ years of experience
             </Item>
             <Item title="Currently, How many people are using your service?">
-              For legal reasons, we can't share the exact amount of number. But, you can say quite a lot of people are currenly using our services
+              For legal reasons, we can not share the exact amount of number. But, you can say quite a lot of people are currenly using our services
             </Item>
             <Item title="How many people are currently working for you?">
               We currenly have more than 200+ people working for us. If you wanna join us then go to <a className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'><Link href="https://career.ashiqthedev.com">this website</Link></a>

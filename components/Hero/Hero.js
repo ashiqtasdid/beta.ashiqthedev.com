@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const Hero = () => {
     return (
@@ -12,7 +14,7 @@ export const Hero = () => {
                 >
                     <path d="M50 0H100L50 100H0L50 0Z" />
                 </svg>
-                <img
+                <Image
                     className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
                     src="https://cdn.ashiqtasdid.xyz/images/cdn/ashiqthedev.com/images/cr3.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     alt=""
@@ -33,17 +35,19 @@ export const Hero = () => {
                     </p>
                     <div className="flex items-center">
                         <a
-                            href="/"
+                            
                             className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                         >
-                            Get started
+                            <Link href="/">
+                                Get started
+                            </Link>
                         </a>
                         <a
-                            href="/"
+                            
                             aria-label=""
                             className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
                         >
-                            Learn more
+                            <Link href="/">Learn more</Link>
                         </a>
                     </div>
                 </div>
