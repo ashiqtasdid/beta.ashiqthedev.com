@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Newsletter from '../components/Newsletter/Newsletter'
 import Stat from '../components/Stat/Stat'
 import styles from '../styles/Home.module.css'
-import Waw from '../components/WAW/Waw'
+import Waw from '../components/Waw/Waw'
 import Faq from '../components/Faq/Faq'
 
 export default function Home() {
