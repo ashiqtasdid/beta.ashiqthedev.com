@@ -12,13 +12,15 @@ export const Navbar = () => {
                 <div className="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
-                            <a
-                                aria-label="Our product"
-                                title="Our product"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-400"
-                            >
-                               <Link href="/">Home</Link>
-                            </a>
+                            <Link href="/">
+                                <a
+                                    aria-label="Our product"
+                                    title="Our product"
+                                    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-400"
+                                >
+                                    Home
+                                </a>
+                            </Link>
                         </li>
                         <li>
                             <a
@@ -26,7 +28,7 @@ export const Navbar = () => {
                                 title="Our product"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-400"
                             >
-                             <Link href="/services">Services</Link>
+                                <Link href="/services">Services</Link>
                             </a>
                         </li>
                         <li>
@@ -66,11 +68,7 @@ export const Navbar = () => {
                             </a>
                         </li>
                     </ul>
-                    <a
-                        href=""
-                        aria-label="Company"
-                        title="Ashiq The Dev"
-                        className="inline-flex items-center lg:mx-auto"
+                    <a aria-label="Company" title="Ashiq The Dev" className="inline-flex items-center lg:mx-auto"
                     >
                         <Image src="https://cdn.ashiqtasdid.xyz/images/cdn/ashiqthedev.com/images/atd.jpg"
                             width={50}
@@ -83,11 +81,7 @@ export const Navbar = () => {
                     </a>
                     <ul className="flex items-center hidden ml-auto space-x-8 lg:flex">
                         <li>
-                            <Link
-                                href="/"
-                                aria-label="Sign in"
-                                title="Sign in"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-400"
+                            <Link href="/" aria-label="Sign in" title="Sign in" className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-400"
                             >
                                 Sign in
                             </Link>
@@ -175,24 +169,21 @@ export const Navbar = () => {
                                     <nav>
                                         <ul className="space-y-4">
                                             <li>
-                                                <a
-                                                    // href="/"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                >
-                                                    <Link href="/">Product</Link>
-                                                </a>
+                                                <Link href="/">
+                                                    <a aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+                                                        Product
+                                                    </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    // href="/"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                >
-                                                    <Link href="/">Our Products</Link>
-                                                </a>
+
+                                                <Link href="/">
+                                                    <a aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+
+                                                        Our Products
+                                                    </a>
+                                                </Link>
+
                                             </li>
                                             <li>
                                                 <a
@@ -205,24 +196,18 @@ export const Navbar = () => {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a
-                                                    // href="/signin"
-                                                    aria-label="Sign in"
-                                                    title="Sign in"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                >
-                                                    <Link href="/signin">Sign in</Link>
-                                                </a>
+                                                <Link href="/signin">
+                                                    <a aria-label="Sign in" title="Sign in" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+                                                        Sign in
+                                                    </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    // href="/"
-                                                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                                                    aria-label="Sign up"
-                                                    title="Sign up"
-                                                >
-                                                    <Link href="/signup">Sign Up</Link>
-                                                </a>
+                                                <Link href="/signup">
+                                                    <a className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
+                                                        Sign Up
+                                                    </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </nav>
@@ -232,7 +217,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

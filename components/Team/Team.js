@@ -19,6 +19,7 @@ export const Team = () => {
                             className="absolute object-cover w-full h-full rounded"
                             src="https://i.ibb.co/M8hjV11/279896482-743603556661151-8531526048633745964-n.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
                             alt="Person"
+                            layout='fill'
                         />
                     </div>
                     <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
@@ -53,6 +54,7 @@ export const Team = () => {
                             className="absolute object-cover w-full h-full rounded"
                             src="https://i.ibb.co/X81dg0Q/pngwing-com.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt="Person"
+                            layout='fill'
                         />
                     </div>
                     <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
@@ -68,6 +70,7 @@ export const Team = () => {
                             className="absolute object-cover w-full h-full rounded"
                             src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt="Person"
+                            layout='fill'
                         />
                     </div>
                     <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
@@ -86,6 +89,7 @@ export const Team = () => {
                             className="absolute object-cover w-full h-full rounded"
                             src="https://i.ibb.co/F72cZwX/299376675-1272377493515304-5216759636619363013-n.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt="Person"
+                            layout='fill'
                         />
                     </div>
                     <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">

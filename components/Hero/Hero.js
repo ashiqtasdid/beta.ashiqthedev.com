@@ -18,6 +18,7 @@ export const Hero = () => {
                     className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
                     src="https://cdn.ashiqtasdid.xyz/images/cdn/ashiqthedev.com/images/cr3.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     alt=""
+                    layout='fill'
                 />
             </div>
             <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
@@ -26,7 +27,7 @@ export const Hero = () => {
                         Welcome to
                         <br className="hidden md:block" />
                         The Website of{' '}
-                        <span className="inline-block text-deep-purple-accent-400">
+                        <span className="inline-block text-blue-400">
                             Ashiq The Dev
                         </span>
                     </h2>
@@ -34,21 +35,24 @@ export const Hero = () => {
                         Ashiq The Dev - Developing That Matters is an IT consultant company. We provide various kinds of IT services including Web & Software Development, SEO, Management & Much more. Click on the button below to check it out.
                     </p>
                     <div className="flex items-center">
-                        <a
-                            
-                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                        >
-                            <Link href="/">
+
+                        <Link href="/">
+                            <a
+
+                                className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                            >
                                 Get started
-                            </Link>
-                        </a>
-                        <a
-                            
-                            aria-label=""
-                            className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                        >
-                            <Link href="/">Learn more</Link>
-                        </a>
+                            </a>
+                        </Link>
+                        <Link href="/">
+                            <a
+
+                                aria-label=""
+                                className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-blue-700"
+                            >
+                                Learn more
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ export const Waw = () => {
                         aria-label=""
                         className="inline-flex items-center font-semibold transition-colors duration-200 text-blue-400 hover:text-blue-800"
                     >
-                        <Link href="/about">Learn more</Link>
+                        Learn more
                     </a>
                 </div>
                 <div className="lg:w-1/2">

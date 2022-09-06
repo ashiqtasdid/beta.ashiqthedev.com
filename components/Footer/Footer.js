@@ -1,33 +1,28 @@
-import React from 'react'
-import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react'
 
 export const Footer = () => {
     return (
         <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
                 <div className="md:max-w-md lg:col-span-2">
-                    <Link
-                        href="/"
+                    <Link href="/">
+                    <a
                         aria-label="Go home"
-                        title="Ashiq The Dev"
+                        title="Company"
                         className="inline-flex items-center"
-                    >
-                        <Image src="https://cdn.ashiqtasdid.xyz/images/cdn/ashiqthedev.com/images/atd.jpg"
-                            width={50}
-                            height={50}
-                            alt="image"
-                        />
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                        >
+                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-50 uppercase">
                             Ashiq The Dev
                         </span>
+                    </a>
                     </Link>
                     <div className="mt-4 lg:max-w-sm">
-                        <p className="text-sm text-gray-800">
-                            Ashiq The Dev - Developing That Matters is an IT consultant company. It provides various kinds of IT services including, Web & Mobile Development, SEO & much more
+                        <p className="text-sm text-gray-50">
+                            Ashiq The Dev - Developing That Matters is an IT consultant company.
                         </p>
-                        <p className="mt-4 text-sm text-gray-800">
-                            Ashiq The Dev was established in 2020 by Md. Ashiquzzaman khan | CEO, ATD
+                        <p className="mt-4 text-sm text-gray-50">
+                            It provides various kinds of IT services including, Web & Mobile Development, SEO & much more
                         </p>
                     </div>
                 </div>
@@ -38,50 +33,53 @@ export const Footer = () => {
                         </p>
                         <ul className="mt-2 space-y-2">
                             <li>
-                                <a
-                                    href="https://studio.ashiqthedev.com"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    ATD Studios
-                                </a>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    Services
+                                <Link href="/">
+                                    <a
+                                        className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
+                                    >
+                                        Games
+                                    </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link
-                                    href="/"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    Softwares
+                                <Link href="/services">
+                                    <a
+                                        className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
+                                    >
+                                        Services
+                                    </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link
-                                    href="/"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    Operating System
+                                <Link href="/">
+                                    <a
+                                        className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
+                                    >
+                                        Softwares
+                                    </a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/">
+                                    <a
+                                        className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
+                                    >
+                                        OS
+                                    </a>
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <p className="font-semibold tracking-wide text-gray-800">
-                            Links
+                            Useful links
                         </p>
                         <ul className="mt-2 space-y-2">
                             <li>
                                 <a
-                                    href="https://domains.ashiqthedev.com"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
+                                    href='https://domains.ashiqthedev.com' className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
-                                    Our Domains
+                                    Our domains
                                 </a>
                             </li>
                             <li>
@@ -94,27 +92,20 @@ export const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="https://twitter.com/AshiqTheDev"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    Twitter
-                                </a>
-                            </li>
-                            <li>
-                                <a
                                     href="https://twitter.com/AshiqTheDevBeta"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
-                                    Twitter (Beta)
+                                    Beta
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    // href="/contact"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    <Link href="/contact">Help</Link>
-                                </a>
+                                <Link href="/contact">
+                                    <a
+                                        className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
+                                    >
+                                        Contact
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -122,78 +113,59 @@ export const Footer = () => {
                         <p className="font-semibold tracking-wide text-gray-800">About</p>
                         <ul className="mt-2 space-y-2">
                             <li>
+                                <Link href="/team">
+                                    <a
+                                        className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
+                                    >
+                                        Team
+                                    </a>
+                                </Link>
+                            </li>
+                            <li>
                                 <a
-                                    // href="team"
+                                    href="https://careers.ashiqthedev.com"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
-                                    <Link href="/team">Team</Link>
+                                    Careeers
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://career.ashiqthedev.com"
+                                    href="https://twitter.com/AshiqTheDev"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
-                                    Career
+                                    twitter
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    // href="/about"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    <Link href="/about">Who are we</Link>
-                                </a>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
+                                    href="https://portfolio.ashiqtasdid.xyz/projects"
                                     className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
                                 >
                                     Projects
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <p className="font-semibold tracking-wide text-gray-800">Legal</p>
+                        <p className="font-semibold tracking-wide text-gray-800">Address</p>
                         <ul className="mt-2 space-y-2">
                             <li>
-                                <Link
-                                    href="/"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
+                                <div className="text-gray-600 transition-colors duration-300 hover:text-blue-400">
                                     Shershah Colony, CTG 4210, BD
 
                                     admin@ashiqthedev.com
 
                                     + 880 1311 807380
-                                </Link>
+                                </div>
                             </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    Terms & Conditions
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
-                                >
-                                    Privacy Policy
-                                </Link>
-                            </li>
-                           
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
                 <p className="text-sm text-gray-600">
-                    © Copyright 2022 Ashiq The Dev Inc. - All rights reserved.
+                    © Copyright (2020-2022) Ashiq The Dev Inc. - All rights reserved.
                 </p>
                 <div className="flex items-center mt-4 space-x-4 sm:mt-0">
                     <a
@@ -214,7 +186,7 @@ export const Footer = () => {
                         </svg>
                     </a>
                     <a
-                        href="https://facebook.com/ashiqthedev"
+                        href="https://facebook.com/AshiqTheDev"
                         className="text-gray-500 transition-colors duration-300 hover:text-blue-400"
                     >
                         <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">

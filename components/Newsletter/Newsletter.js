@@ -46,20 +46,22 @@ export const Newsletter = () => {
                         <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
                             To get the latest updates, you have to get subscribed for our Newsletter. We will send you an email informing every updates. Just fill this form & you are good to go.
                         </p>
-                        <a
-                            // href="/"
-                            aria-label=""
-                            className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-blue-400 hover:text-blue-700"
-                        >
-                           <Link href="/">Learn more</Link>
-                            <svg
-                                className="inline-block w-3 ml-2"
-                                fill="currentColor"
-                                viewBox="0 0 12 12"
+                        <Link href="/">
+                            <a
+                                // href="/"
+                                aria-label=""
+                                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-blue-400 hover:text-blue-700"
                             >
-                                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                            </svg>
-                        </a>
+                                Learn more
+                                <svg
+                                    className="inline-block w-3 ml-2"
+                                    fill="currentColor"
+                                    viewBox="0 0 12 12"
+                                >
+                                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                                </svg>
+                            </a>
+                        </Link>
                     </div>
                     <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
                         <div className="relative">
@@ -94,9 +96,9 @@ export const Newsletter = () => {
                                         <label
                                             htmlFor="email"
                                             className="inline-block mb-1 font-medium"
-                                            
+
                                         >
-                                            <h1 >E-mail</h1>
+                                            <h1>E-mail</h1>
                                         </label>
                                         <input
                                             placeholder="john.doe@example.org"
